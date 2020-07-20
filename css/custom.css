@@ -1,15 +1,8 @@
-.md-azul, .md-azul:hover {
-	background-color: #008EAA !important;
-}
+/* ----------------------------------------------------------------
+	Custom CSS
 
-.md-verde .md-verde:hover {
-	background-color: #00B140 !important;
-}
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
 
-.md-azul:hover, .md-verde:hover {
-	opacity: 0.9 !important;
-}
 
-.si-whatsapp:hover, .si-colored.si-whatsapp {
-	background-color: #25D366 !important;
-}

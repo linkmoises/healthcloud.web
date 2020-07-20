@@ -3,41 +3,33 @@
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-	<!-- SEO Meta Tags -->
-	<meta name="description" content="Nube de información de salud de excelencia">
-	<meta name="author" content="Rackmed Technologies">
-
-	<!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="HealthCloud" /> <!-- website name -->
-	<meta property="og:site" content="https://healthcloud.dev" /> <!-- website link -->
-	<meta property="og:title" content="HealthCloud"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Nube de información de salud de excelencia" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="images/meta.jpg" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="https://healthcloud.dev" /> <!-- where do you want your post to link to -->
-	<meta property="og:type" content="article" />
-
-	<!-- Website Title -->
-	<title>HealthCloud - Sistema de información de salud en la nube</title>
+	<meta name="author" content="SemiColonWeb" />
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,900&display=swap" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-	<link rel="stylesheet" href="css/fontawesome-all.css" type="text/css">
-	<link rel="stylesheet" href="css/custom.css" type="text/css">
-	
+
+	<!-- Landing Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="demos/landing/landing.css" type="text/css" />
+	<link rel="stylesheet" href="demos/landing/css/fonts.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- Favicon  -->
-	<link rel="icon" href="images/favicon.png">
-	
+	<link rel="stylesheet" href="css/colors.php?color=3D80E4" type="text/css" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Landing Demo | Canvas</title>
+
+
 </head>
 
 <body class="stretched">
@@ -48,237 +40,546 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header page-section dark">
-
+		<header id="header" class="transparent-header page-section dark" data-sticky-class="not-dark">
 			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
 
-				<div class="container clearfix">
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="/" class="standard-logo" data-dark-logo="images/logo-dark.png" data-sticky-logo="images/logo.png" data-mobile-logo="images/logo-mini.png"><img src="images/logo.png" alt="Canvas Logo"></a>
+							<a href="/" class="retina-logo" data-dark-logo="images/logo-dark@2x.png" data-sticky-logo="images/logo-@2x.png" data-mobile-logo="images/logo-mini.png"><img src="images/logo-@2x.png" alt="Canvas Logo"></a>
+						</div><!-- #logo end -->
 
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+						</div>
 
-					<!-- Logo
-					============================================= -->
-					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
-					</div><!-- #logo end -->
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
 
-					<!-- Primary Navigation
-					============================================= -->
-					<nav id="primary-menu">
+							<ul class="menu-container one-page-menu">
+								<li class="menu-item current"><a class="menu-link" href="#" data-href="#header"><div>Inicio</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#" data-href="#section-servicios"><div>Servicios</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#" data-href="#section-nosotros"><div>Nosotros</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#" data-href="#section-contacto"><div>Contacto</div></a></li>
+							</ul>
 
-						<ul class="one-page-menu">
-							<li class="current"><a href="#" data-href="#header"><div>Inicio</div></a></li>
-							<li><a href="#" data-href="#section-features"><div>Características</div></a></li>
-							<li><a href="#" data-href="#section-pricing"><div>Inversión</div></a></li>
-							<li><a href="#" data-href="#section-faqs"><div>¿Preguntas?</div></a></li>
-							<li><a href="#" data-href="#section-us">Nosotros</a></li>
-						</ul>
+						</nav><!-- #primary-menu end -->
 
-					</nav><!-- #primary-menu end -->
-
+					</div>
 				</div>
-
 			</div>
-
+			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
 
-		<section id="slider" class="slider-element slider-parallax full-screen dark" style="background: url(images/static-bg.jpg) center center no-repeat; background-size: cover">
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element dark min-vh-100 include-header" style="background-image: url('demos/landing/images/hero/1.svg');">
+			<div class="slider-inner flex-column">
 
-			<div class="slider-parallax-inner">
+				<div class="vertical-middle">
+					<div class="container">
+						<div class="row align-items-lg-center no-gutters">
 
-				<div class="container-fluid vertical-middle clearfix">
+							<div class="col-lg-6 col-md-6">
+								<h2 class="display-4 font-weight-bold text-white text-rotater" data-separator="," data-rotate="fadeIn" data-speed="3500">Ecosistema para<br><span class="t-rotate text-white">consultorios,clínicas,hospitales</span><br>basado en la nube.</h2>
+								<p class="lead mb-4 font-weight-normal">Diseñado y desarrollado por profesionales de la salud para profesionales de la salud.</p>
+								<div>
+									<a href="#" class="btn mt-2 text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm"><i class="icon-apple1 mr-2"></i>Get it on the App Store</a>
+									<a href="#" class="ml-0 ml-lg-2 mt-2 btn text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm"><i class="icon-google-play mr-2"></i>Get it on Play Store</a>
+								</div>
+								<p class="text-white-50 text-uppercase mt-2 ls1 font-weight-medium"><small>Sign up &amp; Get 30 Days Free trail</small></p>
+							</div>
 
-					<div class="heading-block title-center nobottomborder">
-						<h1 style="font-size: 42px;">¡Bienvenido!</h1>
-						<span>Conoce nuestro sistema de información de salud en la nube</span>
+							<div class="col-lg-1 d-md-none d-lg-block"></div>
+
+							<div class="col-lg-5 col-md-6 align-self-lg-end">
+								<div class="slide-imgs">
+									<img src="demos/landing/images/hero/1-2.png" alt="Image" class="card-img">
+									<img src="demos/landing/images/hero/1-1.png" alt="Image" class="iphone-img">
+								</div>
+							</div>
+
+						</div>
 					</div>
+				</div>
 
-					<div class="center bottommargin">
-						<a href="#" class="button button-3d button-xlarge md-verde nobottommargin">
-							<i class="icon-star3"></i>Prueba la plataforma
-						</a> - 
-						<a href="#" class="button button-3d button-xlarge md-azul nobottommargin">
-							<i class="icon-download"></i>Descarga HealthCloud
-						</a> - 
-						<a href="#" data-scrollto="#section-pricing" class="button button-3d button-red button-xlarge nobottommargin">
-							<i class="icon-user2"></i>Invierte en una suscripción
-						</a>
+				<div class="section-clients">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-md-7 d-flex align-items-lg-center flex-row">
+								<div class="col"><img src="demos/conference/images/sponcors/amazon.svg" alt="Clients"></div>
+								<div class="col"><img src="demos/conference/images/sponcors/netflix.svg" alt="Clients"></div>
+								<div class="col"><img src="demos/conference/images/sponcors/google.svg" alt="Clients"></div>
+								<div class="col"><img src="demos/conference/images/sponcors/linkedin.svg" alt="Clients"></div>
+							</div>
+						</div>
 					</div>
-
 				</div>
 
 			</div>
-
-		</section>
+		</section><!-- #slider end -->
 
 		<!-- Content
 		============================================= -->
 		<section id="content">
+			<div class="content-wrap pb-0">
 
-			<div class="content-wrap">
-
-				<div class="container clearfix">
-
-					<div id="section-features" class="heading-block title-center page-section">
-						<h2>Características del proyecto</h2>
-						<span>Algunas de nuestras características más destacables</span>
+				<div class="container">
+					<div class="mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
+						<h5 class="text-uppercase ls1 text-muted mb-3">Why You Choose Us?</h5>
+						<h2 class="nott mb-4">Powerful &amp; Best Features for Canvas App</h2>
+						<p class="lead font-weight-normal font-primary mb-5">Dynamically underwhelm end-to-end experiences for premier methodologies. Objectively benchmark front-end bandwidth vis-a-vis flexible e-services. Globally drive business convergence without backward-compatible markets.</p>
 					</div>
 
-					<div class="col_one_third">
-						<div class="feature-box fbox-plain">
-							<div class="fbox-icon" data-animate="bounceIn">
-								<a href="#"><img src="images/icons/features/responsive.png" alt="Diseño Adaptativo"></a>
+					<div class="features-items mx-auto" style="max-width: 1000px;">
+						<div class="row justify-content-around">
+							<div class="col-md-5 bottommargin-lg">
+								<div class="feature-box media-box">
+									<div class="fbox-icon">
+										<i class="icon-line2-pointer text-primary"></i>
+									</div>
+									<div class="fbox-content">
+										<h2 class="h4 font-weight-bold mb-4">Anywhere &amp; Anytime</h2>
+										<div class="lead font-weight-normal text-black-50">Appropriately reconceptualize timely convergence through resource maximizing collaboration and idea-sharing. Globally coordinate cross-platform products via interoperable models.</div>
+									</div>
+								</div>
 							</div>
-							<h3>Diseño Adaptativo</h3>
-							<p>Nuestra plataforma está diseñada para funcionar en cualquier navegador actual y en cualquier tamaño de pantalla.</p>
+
+							<div class="col-md-5 bottommargin-lg">
+								<div class="feature-box media-box">
+									<div class="fbox-icon">
+										<i class="icon-line2-credit-card text-danger"></i>
+									</div>
+									<div class="fbox-content">
+										<h2 class="h4 font-weight-bold mb-4">International Transactions</h2>
+										<div class="lead font-weight-normal text-black-50"> Rapidiously actualize wireless benefits before resource-leveling quality vectors. Dramatically innovate progressive convergence without tactical schemas. Competently unleash distributed users whereas.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-around">
+							<div class="col-md-5 bottommargin-lg">
+								<div class="feature-box media-box">
+									<div class="fbox-icon">
+										<i class="icon-line2-shield text-warning"></i>
+									</div>
+									<div class="fbox-content">
+										<h2 class="h4 font-weight-bold mb-4">100% Secured &amp; Trustable</h2>
+										<div class="lead font-weight-normal text-black-50">Appropriately redefine market positioning leadership skills whereas client-based "outside the box" thinking. Monotonectally engage next-generation leadership skills without one-to-one testing procedures.</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-5 bottommargin-lg">
+								<div class="feature-box media-box">
+									<div class="fbox-icon">
+										<i class="icon-line2-notebook text-info"></i>
+									</div>
+									<div class="fbox-content">
+										<h2 class="h4 font-weight-bold mb-4">Detailed Documentation</h2>
+										<div class="lead font-weight-normal text-black-50">Compellingly evisculate impactful e-services for extensible resources. Interactively grow timely e-commerce rather than optimal expertise. Uniquely optimize impactful experiences rather than cooperative.</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+				</div>
+				<div class="clear"></div>
 
-					<div class="col_one_third">
-						<div class="feature-box fbox-plain">
-							<div class="fbox-icon" data-animate="bounceIn" data-delay="200">
-								<a href="#"><img src="images/icons/features/support.png" alt="Powerful Performance"></a>
-							</div>
-							<h3>Ayuda y Soporte</h3>
-							<p>Tenemos una curva de aprendizaje pequeña, pero tenemos recursos para ayudarte si lo necesitas.</p>
+				<div class="row align-items-stretch align-content-stretch no-gutters topmargin">
+
+					<div class="col-md-6 order-md-2" style="background: url('demos/landing/images/section/1.jpg') center center / cover; min-height: 300px"></div>
+
+					<div class="col-md-6 bg-color dark order-md-1">
+						<div class="section-features">
+							<h2 class="mb-3 h4 font-weight-semibold">Intrinsicly synergistic benefits.</h2>
+							<p class="h6 font-weight-normal mb-5"> Enthusiastically morph unique web-readiness via impactful platforms. Intrinsicly matrix premium expertise for diverse expertise. Intrinsicly drive collaborative bandwidth for accurate testing.</p>
+
+							<h2 class="mb-3 h4 font-weight-semibold">Appropriately target customers.</h2>
+							<p class="h6 font-weight-normal">Energistically incentivize front-end web services via enabled collaboration and idea-sharing. Conveniently whiteboard effective niche markets before flexible ROI.</p>
+							<p class="h6 font-weight-normal mb-5">Phosfluorescently build turnkey convergence without goal-oriented systems.</p>
+
+							<h2 class="mb-3 h4 font-weight-semibold">Completely exploit focused.</h2>
+							<p class="h6 font-weight-normal mb-0">Continually enable leveraged users after functional web-readiness. Interactively conceptualize accurate resources whereas distinctive e-markets.</p>
 						</div>
 					</div>
+				</div>
 
-					<div class="col_one_third col_last">
-						<div class="feature-box fbox-plain">
-							<div class="fbox-icon" data-animate="bounceIn" data-delay="400">
-								<a href="#"><img src="images/icons/features/performance.png" alt="Powerful Performance"></a>
+				<div class="section bg-transparent">
+					<div class="container">
+						<div class="row align-items-center">
+
+							<div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+								<img src="demos/landing/images/section/2.jpg" alt="Image">
 							</div>
-							<h3>Código abierto</h3>
-							<p>Nuestro proyecto es una pieza de software libre y código abierto. Lo puedes descargar gratis y poner a funcionar donde quieras.</p>
-						</div>
-					</div>
 
-					<div class="clear"></div>
+							<div class="col-md-6 offset-lg-1">
+								<div class="heading-block border-bottom-0 mb-4">
+									<i class="icon-line-paper h1 color"></i>
+									<h3 class="nott ls0">Version 6 is now 2x Faster.</h3>
+								</div>
+								<p class="font-weight-normal lead">Enthusiastically morph unique web-readiness via impactful platforms. Intrinsicly matrix premium expertise for diverse expertise. Intrinsicly drive collaborative bandwidth for accurate testing.</p>
 
-					<div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+								<div class="clear"></div>
 
-					<div id="section-pricing" class="heading-block title-center nobottomborder page-section">
-						<h2>Inversión</h2>
-						<span>Conoce nuestros planes de suscripción y sus características</span>
-					</div>
-
-					<div class="pricing-box pricing-extended bottommargin clearfix">
-
-						<div class="pricing-desc">
-							<div class="pricing-title">
-								<h3>Plan básico (Gratuito)</h3>
-							</div>
-							<div class="pricing-features">
-								<ul class="iconlist-color clearfix">
-									<li><i class="icon-desktop"></i> Ultra Responsive Layouts</li>
-									<li><i class="icon-eye-open"></i> Retina Ready Designs</li>
-									<li><i class="icon-beaker"></i> Advanced Admin Panel</li>
-									<li><i class="icon-magic"></i> Tons of Customization Options</li>
-									<li><i class="icon-font"></i> Support for Custom Fonts</li>
-									<li><i class="icon-stack3"></i> Premium Sliders Included</li>
-									<li><i class="icon-file2"></i> Photoshop Source Files Included</li>
-									<li><i class="icon-support"></i> 24x7 Priority Email Support</li>
+								<ul class="skills mt-2 mb-5">
+									<li data-percent="60">
+										<span>Version 6.0</span>
+										<div class="progress">
+											<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="60" data-refresh-interval="30" data-speed="1500"></span>% Optimized</div></div>
+										</div>
+									</li>
 								</ul>
+
+								<a href="#" class="btn text-white bg-color rounded-lg px-4 py-3 font-weight-semibold text-uppercase shadow-sm">Learn More <i class="icon-line-arrow-right ml-1"></i></a>
 							</div>
 						</div>
-
-						<div class="pricing-action-area">
-							<div class="pricing-meta">
-								A solo
-							</div>
-							<div class="pricing-price">
-								<span class="price-unit">&#36;</span>0.00<span class="price-tenure">para siempre</span>
-							</div>
-							<div class="pricing-action">
-								<a href="#" class="button button-3d button-large btn-block nomargin md-verde">Empezar</a>
-							</div>
-						</div>
-
 					</div>
+				</div>
 
-					<div class="pricing-box pricing-extended bottommargin clearfix">
+				<div class="section m-0" style="padding: 100px 0; background-color: rgba(61,128,228,0.05)">
 
-						<div class="pricing-desc">
-							<div class="pricing-title">
-								<h3>Plan básico (Individual)</h3>
-							</div>
-							<div class="pricing-features">
-								<ul class="iconlist-color clearfix">
-									<li><i class="icon-desktop"></i> Ultra Responsive Layouts</li>
-									<li><i class="icon-eye-open"></i> Retina Ready Designs</li>
-									<li><i class="icon-beaker"></i> Advanced Admin Panel</li>
-									<li><i class="icon-magic"></i> Tons of Customization Options</li>
-									<li><i class="icon-font"></i> Support for Custom Fonts</li>
-									<li><i class="icon-stack3"></i> Premium Sliders Included</li>
-									<li><i class="icon-file2"></i> Photoshop Source Files Included</li>
-									<li><i class="icon-support"></i> 24x7 Priority Email Support</li>
-								</ul>
-							</div>
-						</div>
+					<div class="container clearfix">
 
-						<div class="pricing-action-area">
-							<div class="pricing-meta">
-								A solo
-							</div>
-							<div class="pricing-price">
-								<span class="price-unit">&#36;</span>29.99<span class="price-tenure">mensual</span>
-							</div>
-							<div class="pricing-action">
-								<a href="#" class="button button-3d button-large btn-block nomargin md-verde">Empezar</a>
-							</div>
+						<div class="heading-block mx-auto center" style="max-width: 500px">
+							<h5 class="text-uppercase ls1 text-muted mb-2">Gallery</h5>
+							<h2 class="nott mb-3">App Screenhots</h2>
+							<p class="h6 font-weight-normal text-black-50">Recusandae ducimus, sequi, sapiente possimus optio impedit efficient services. Completely promote.</p>
 						</div>
 
 					</div>
 
-					<div class="clear"></div>
+					<div class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="40" data-center="true" data-loop="true" data-nav="false" data-pagi="true" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="4" data-items-xl="5">
 
-					<div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
-
-					<div id="section-faqs" class="heading-block title-center page-section">
-						<h2>Preguntas frecuentes</h2>
-						<span>Aquí algunas de las cosas que más nos preguntan</span>
-					</div>
-
-					<div class="col_half nobottommargin">
-
-						<h4 id="faq-1"><strong>Q.</strong> ¿Es un software o una plataforma en la nube?</h4>
-						<p>HealthCloud es un proyecto de software libre, esto quiere decir que eres libre de descargarlo, modificarlo y distribuirlo siempre y cuando respetes la licencia del proyecto y también distribuyas tus modificaciones. La nube de HealthCloud es un servicio que ofrecemos para soportar el costo de desarrollo del proyecto donde no tienes que hacer más que registrarte para empezar a utilizarlo.</p>
-
-						<div class="line"></div>
-
-						<h4 id="faq-2"><strong>Q.</strong> ¿Los datos de mis pacientes estarán seguros en la nube?</h4>
-						<p>Somos concientes que la información clínica es uno de los tipos de datos más sensibles que existen, por ello, almacenamos las bases de datos bajo fuertes medidas de encriptación y empleamos todas las medidas que hay actualmente para asegurar las comunicaciones entre tu dispositivo y nuestros servidores. Del mismo modo la comunicación en nuestra red es completamente cifrada.</p>
-
-						<div class="line"></div>
-
-						<h4 id="faq-3"><strong>Q.</strong> ¿Si lo puedo descargar, puedo tener mi propia instancia?</h4>
-						<p>Por supuesto. Al ser un software libre, puedes descargarlo y configurar una red de servidores para tener tu propia instancia ejecutándose donde prefieras. Sin embargo, tienes que tener en cuenta que no podrás acceder a la base de datos en la nube de HealthCloudMD donde están todos los expedientes clínicos de los pacientes que diariamente ven los trabajadores de la salud que usan nuestros servicios. Por otro lado podrás enfrentar problemas que no hemos experimentado en carne propia mientras desarrollamos la plataforma, por lo que nuestros recursos de ayuda y soporte podrían ser limitados.</p>
-
-					</div>
-
-					<div class="col_half nobottommargin col_last">
-
-						<h4 id="faq-4"><strong>Q.</strong> ¿Qué pasa si el paciente se atiende en otra instalación que usa HealthCloud?</h4>
-						<p>El expediente clínico digital es único de manera que si un paciente es registrado en una instalación estará disponible para ser atendido en cualquier instalación que utilice nuestra plataforma.</p>
-
-						<div class="line"></div>
-
-						<h4 id="faq-5"><strong>Q.</strong> ¿Puedo exportar los datos del paciente?</h4>
-						<p>Por supuesto. Una de nuestros objetivos es cumplir siempre con los estándares vigentes de manera tal que la información clínica de cada paciente puede ser exportada en formato <abbr title="Health Level 7 Clinical Document Architecture">HL7 CDA</abbr> cuando se trata de expediente electrónico y las imágenes en <abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr>, cuando se trata de estudios imagenológicos.</p>
-
-						<div class="line"></div>
-
-						<h4 id="faq-6"><strong>Q.</strong> ¿Puedo colaborar con el proyecto?</h4>
-						<p>¡Claro que sí! Toda ayuda es bienvenida, para ello te puedes unir a nuestro grupo de Slack donde orquestamos todo el desarrollo de HealthCloud y sus servicios. Hay muchas maneras de ayudar, si conoces sobre python, django, react, mongodb eres bienvenido, pues HealthCloud se desarrolla sobre estos lenguajes/frameworks de desarrollo. Si no sabes nada de esto, también eres bienvenido ya que podrías colaborar traduciendo la plataforma, ayudando a escribir la documentación o haciendo pruebas de las versiones preliminares antes de que pasen a producción.</p>
+						<div class="oc-item">
+							<a href="demos/landing/images/carousel/1.png" data-lightbox="image">
+								<img src="demos/landing/images/carousel/1.png" alt="Image 1">
+							</a>
+						</div>
+						<div class="oc-item">
+							<a href="demos/landing/images/carousel/2.png" data-lightbox="image">
+								<img src="demos/landing/images/carousel/2.png" alt="Image 2">
+							</a>
+						</div>
+						<div class="oc-item">
+							<a href="demos/landing/images/carousel/3.png" data-lightbox="image">
+								<img src="demos/landing/images/carousel/3.png" alt="Image 3">
+							</a>
+						</div>
+						<div class="oc-item">
+							<a href="demos/landing/images/carousel/4.png" data-lightbox="image">
+								<img src="demos/landing/images/carousel/4.png" alt="Image 4">
+							</a>
+						</div>
+						<div class="oc-item">
+							<a href="demos/landing/images/carousel/5.png" data-lightbox="image">
+								<img src="demos/landing/images/carousel/5.png" alt="Image 5">
+							</a>
+						</div>
+						<div class="oc-item">
+							<a href="demos/landing/images/carousel/6.png" data-lightbox="image">
+								<img src="demos/landing/images/carousel/6.png" alt="Image 6">
+							</a>
+						</div>
+						<div class="oc-item">
+							<a href="demos/landing/images/carousel/7.png" data-lightbox="image">
+								<img src="demos/landing/images/carousel/7.png" alt="Image 7">
+							</a>
+						</div>
 
 					</div>
 
-					<div class="clear"></div>
+				</div>
 
-					<div class="clear"></div>
+				<div class="section m-0 parallax" style="padding: 100px 0;" data-0-top="background-color:rgb(61,128,228);" data-center-bottom="background-color:rgb(0,0,0);">
+					<div class="container">
+						<div class="row justify-content-between">
+							<div class="col-xl-4 col-lg-5 col-md-6 dark dotted-bg">
+								<div class="heading-block border-bottom-0 bottommargin-sm">
+									<i class="icon-credit h1"></i>
+									<h2 class="nott" style="font-size: 36px;">No Hidden Charges. <br>Choose Your Best Plan.</h2>
+								</div>
+								<div class="font-weight-normal lead">Credibly target highly efficient niche markets whereas end-to-end results.</div>
 
+								<p class="text-white-50 mt-5">During Free trail you won't be charge and you can freely use this app without <a href="#" class="text-white"><u>Terms and Condtions</u></a>.</p>
+							</div>
+							<div class="col-lg-7 col-md-6">
+								<div class="row">
+									<div class="col-lg-6 pricing-table">
+										<div class="card shadow" style="background-image: url('demos/landing/images/section/pricing-bg-light.svg'); background-position: 0 100%; background-size: 100% 290px;">
+											<h5 class="text-uppercase ls1 mb-2">Startup</h5>
+											<h2 class="ls0 font-weight-bold mb-3">Free</h2>
+											<p class="mb-5 text-black-50">Phosfluorescently negotiate alternative human capital with fully tested leadership skills. Quickly enable.</p>
+											<ul class="iconlist">
+												<li><i class="icon-check-circle color"></i>7 Days Free Trail</li>
+												<li><i class="icon-check-circle color"></i>App-In-Purchase</li>
+												<li><i class="icon-check-circle color"></i>100% Safe &amp; Secure</li>
+												<li><i class="icon-check-circle color"></i>Liecenced Company</li>
+												<li><i class="icon-check-circle color"></i>No Hidden Charges</li>
+											</ul>
+											<a href="#" class="btn btn-block text-white bg-color rounded-lg p-3 font-weight-semibold text-uppercase">Download Free</a>
+										</div>
+									</div>
+
+									<div class="col-lg-6 pricing-table mt-4 mt-lg-0">
+										<div class="card shadow" style="background-image: url('demos/landing/images/section/pricing-bg.svg');">
+											<h5 class="text-uppercase ls1 text-white-50 mb-2">Pro</h5>
+											<h2 class="ls0 font-weight-bold mb-5 text-white">$29</h2>
+											<p class="mt-2 text-black-50">Holisticly disintermediate viral results rather than next-generation action items vertical metrics rather than parallel growth strategies.</p>
+											<ul class="iconlist">
+												<li><i class="icon-check-circle color"></i>One Time Purchase</li>
+												<li><i class="icon-check-circle color"></i>All Bundle Included</li>
+												<li><i class="icon-check-circle color"></i>100% Safe &amp; Secure</li>
+												<li><i class="icon-check-circle color"></i>Liecenced Company</li>
+												<li><i class="icon-check-circle color"></i>No Hidden Charges</li>
+											</ul>
+											<a href="#" class="btn btn-block text-white bg-color rounded-lg p-3 font-weight-semibold text-uppercase">Purchase Pro</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-center dark topmargin">
+							<div class="col-md-7">
+								<h2 class="text-center text-white mb-5 mt-4 font-weight-semibold">Frequently Asked Questions</h2>
+								<div class="toggle-wrap">
+									<div class="toggle">
+										<div class="toggle-header">
+											<div class="toggle-icon">
+												<i class="toggle-closed icon-angle-right1"></i>
+												<i class="toggle-open icon-angle-down1"></i>
+											</div>
+											<div class="toggle-title">
+												How do I become an author?
+											</div>
+										</div>
+										<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+									</div>
+
+									<div class="toggle">
+										<div class="toggle-header">
+											<div class="toggle-icon">
+												<i class="toggle-closed icon-angle-right1"></i>
+												<i class="toggle-open icon-angle-down1"></i>
+											</div>
+											<div class="toggle-title">
+												Helpful Resources for Authors
+											</div>
+										</div>
+										<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+									</div>
+
+									<div class="toggle">
+										<div class="toggle-header">
+											<div class="toggle-icon">
+												<i class="toggle-closed icon-angle-right1"></i>
+												<i class="toggle-open icon-angle-down1"></i>
+											</div>
+											<div class="toggle-title">
+												How much money can I make?
+											</div>
+										</div>
+										<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+									</div>
+
+									<div class="toggle">
+										<div class="toggle-header">
+											<div class="toggle-icon">
+												<i class="toggle-closed icon-angle-right1"></i>
+												<i class="toggle-open icon-angle-down1"></i>
+											</div>
+											<div class="toggle-title">
+												Can I offer my items for free on a promotional basis?
+											</div>
+										</div>
+										<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+									</div>
+
+									<div class="toggle">
+										<div class="toggle-header">
+											<div class="toggle-icon">
+												<i class="toggle-closed icon-angle-right1"></i>
+												<i class="toggle-open icon-angle-down1"></i>
+											</div>
+											<div class="toggle-title">
+												An Introduction to the Marketplaces for Authors
+											</div>
+										</div>
+										<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+									</div>
+								</div>
+								<h5 class="mt-4 text-center font-weight-normal text-white-50 mb-0">Didn't find what you were after? <a href="#" class="text-white"><u>Visit the FAQ Page</u></a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section m-0 bg-transparent pb-0" style="padding-top: 100px;">
+					<div class="container clearfix">
+						<div class="row">
+							<div class="col-lg-6 mb-5">
+								<h2 class="font-weight-bold h2 mb-4">Experienced by <span>46,000+</span> People.</h2>
+								<p class="font-weight-normal mb-2 h6 text-muted">Enthusiastically morph unique web-readiness via impactful platforms. Intrinsicly matrix premium expertise for diverse expertise. Intrinsicly drive collaborative bandwidth for accurate testing.</p>
+
+								<div class="row my-5">
+									<div class="col-md-9">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-line2-screen-desktop text-primary"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Responsive Layout</h3>
+												<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+											</div>
+										</div>
+										<div class="line line-sm"></div>
+									</div>
+									<div class="col-md-9">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-line2-bulb text-warning"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Light &amp; Dark Color Scheme</h3>
+												<p>Change your Website's Primary Scheme instantly by simply adding the dark class to the body.</p>
+											</div>
+										</div>
+										<div class="line line-sm"></div>
+									</div>
+									<div class="col-md-9">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-line2-support text-danger"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Extensive Documentation</h3>
+												<p>We have covered each &amp; everything in our Documentation including Videos &amp; Screenshots.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-1"></div>
+
+							<div class="col-lg-5 d-flex align-items-end">
+								<div class="device-video-wrap">
+									<img src="demos/landing/images/iphone-hand.png" alt="Image">
+									<video poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay muted>
+										<source src='demos/landing/images/form-video.mp4' type='video/mp4' />
+									</video>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section m-0 bg-color" style="padding: 100px 0; background-image: linear-gradient(to bottom, #3D80E4 0%, #0a4bab 80%, #FFF 80%);">
+					<div class="container dark dotted-bg bottommargin-lg">
+						<div class="fslider testimonial testimonial-full center bg-transparent border-0 shadow-none p-0" data-animation="fade" data-pagi="false">
+							<div class="flexslider">
+								<div class="slider-wrap d-flex align-items-center">
+									<div class="slide">
+										<img src="demos/landing/images/clients/skype.svg" alt="Customer Testimonials">
+										<div class="testi-content">
+											<p>Completely restore optimal human capital with economically sound infomediaries. Authoritatively extend end-to-end content with covalent relationships.</p>
+											<div class="testi-meta mt-4">
+												Steve Jobs
+												<span>Apple Inc.</span>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<img src="demos/landing/images/clients/netflix.svg" alt="Customer Testimonials">
+										<div class="testi-content">
+											<p>Dynamically supply cross functional process improvements whereas enterprise-wide ROI. Distinctively streamline cost effective data and multifunctional functionalities.</p>
+											<div class="testi-meta mt-4">
+												Collis Ta'eed
+												<span>Envato Inc.</span>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<img src="demos/landing/images/clients/nat-geo.svg" alt="Customer Testimonials">
+										<div class="testi-content">
+											<p> Globally implement strategic resources via ethical markets. Interactively drive highly efficient potentialities before economically sound applications communicate solutions.</p>
+											<div class="testi-meta mt-4">
+												John Doe
+												<span>XYZ Inc.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container dark"><div class="line"></div></div>
+
+					<div class="container clearfix">
+						<div class="row mx-auto dotted-bg" style="max-width: 740px">
+							<div class="col-md-12">
+								<div class="center dark mb-5">
+									<i class="icon-line-help h1 "></i>
+									<h2 class="font-weight-bold mb-2">Need Help?</h2>
+									<p class="font-weight-normal mb-2 lead">Enthusiastically morph unique web-readiness via impactful platforms.</p>
+								</div>
+
+								<div class="card bg-white shadow-lg border-0">
+									<div class="card-body p-5">
+										<div class="form-widget" data-loader="button" data-alert-type="inline">
+
+											<div class="form-result"></div>
+
+											<form class="row mb-0" id="landing-enquiry" action="include/form.php" method="post" enctype="multipart/form-data">
+												<div class="form-process"></div>
+												<div class="col-12 form-group mb-4">
+													<label>Name:</label>
+													<input type="text" name="landing-enquiry-name" id="landing-enquiry-name" class="form-control form-control-lg required" value="" placeholder="John Doe">
+												</div>
+												<div class="col-12 form-group mb-4">
+													<label>Email:</label>
+													<input type="email" name="landing-enquiry-email" id="landing-enquiry-email" class="form-control form-control-lg required" value="" placeholder="user@company.com">
+												</div>
+												<div class="col-12 form-group mb-4">
+													<label>Phone:</label><br>
+													<div class="input-group input-group-lg">
+														<select class="custom-select required" name="landing-enquiry-idd" id="landing-enquiry-idd" style="max-width: 80px;">
+															<option value="+1">+1</option>
+															<option value="+44">+44</option>
+															<option value="+66">+66</option>
+															<option value="+62">+62</option>
+															<option value="+61">+61</option>
+															<option value="+852">+852</option>
+															<option value="+65">+61</option>
+															<option value="+33">+61</option>
+															<option value="+49">+49</option>
+														</select>
+														<input type="text" name="landing-enquiry-phone" id="landing-enquiry-phone" class="form-control form-control-lg required" value="" placeholder="02-232-2424">
+													</div>
+												</div>
+												<div class="col-12 form-group mb-4">
+													<label>Message:</label>
+													<textarea name="landing-enquiry-additional-requirements" id="landing-enquiry-additional-requirements" class="form-control form-control-lg" cols="30" rows="5" placeholder="Please let us know how we can help you..."></textarea>
+												</div>
+												<div class="col-12 d-none">
+													<input type="text" id="landing-enquiry-botcheck" name="landing-enquiry-botcheck" value="" />
+												</div>
+												<div class="col-12">
+													<button type="submit" name="landing-enquiry-submit" class="btn btn-block text-white bg-color rounded-lg py-3 font-weight-semibold text-uppercase mt-2">Contact Us</button>
+												</div>
+
+												<input type="hidden" name="prefix" value="landing-enquiry-">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 			</div>
@@ -287,109 +588,153 @@
 
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark" style="background: url('images/footer-bg.jpg') repeat fixed; background-size: 100% 100%;">
+		<footer id="footer" class="bg-white border-0">
 
 			<div class="container">
+				<div class="footer-widgets-wrap pt-2 pb-5">
 
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap clearfix">
+					<div class="row mx-auto">
 
-					<div class="col_two_third">
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-md-3 col-6">
+									<div class="widget widget_links">
 
-						<div class="widget clearfix">
+										<h4 class="ls0 ls0">Features</h4>
 
-							<img src="images/footer-widget-logo.png" alt="" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A;">
+										<ul>
+											<li><a href="#">Help Center</a></li>
+											<li><a href="#">Paid with Moblie</a></li>
+											<li><a href="#">Status</a></li>
+											<li><a href="#">Changelog</a></li>
+											<li><a href="#">Contact Support</a></li>
+										</ul>
 
-							<p>HealthCloud es <strong>ubicuo</strong>, <strong>seguro</strong>, <strong>confiable</strong>. La salud de tus pacientes es primero y su información estará a salvo en nuestra nube encriptada siempre disponible.</p>
-							
-							<div class="clearfix"></div>
-
-							<div class="clearfix" style="padding: 10px 0; background: url('images/world-map.png') no-repeat center center;">
-								<div class="col_half">
-									<address class="nobottommargin">
-										<abbr title="Headquarters" style="display: inline-block;margin-bottom: 7px;"><strong>Nuestro bastión está en:</strong></abbr><br>
-										Panamá, Ciudad del Saber,<br>
-										Edificio Innova 109<br>
-									</address>
+									</div>
 								</div>
-								<div class="col_half col_last">
-									<abbr title="Teléfono"><strong>Tel:</strong></abbr> +507 6500 0000<br />
-									<abbr title="Correo electrónico"><strong>Email:</strong></abbr> contacto@healthcloud.dev<br />
-									<abbr title="Skype"><strong>Skype:</strong></abbr> HealthCloudDev
+								<div class="col-md-3 col-6">
+									<div class="widget widget_links">
+
+										<h4 class="ls0 ls0">Support</h4>
+
+										<ul>
+											<li><a href="#">Home</a></li>
+											<li><a href="#">About</a></li>
+											<li><a href="#">FAQs</a></li>
+											<li><a href="#">Support</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+
+									</div>
+								</div>
+								<div class="col-md-3 col-6 mt-4 mt-md-0">
+									<div class="widget widget_links">
+
+										<h4 class="ls0 ls0">Trending</h4>
+
+										<ul>
+											<li><a href="#">Shop</a></li>
+											<li><a href="#">Portfolio</a></li>
+											<li><a href="#">Blog</a></li>
+											<li><a href="#">Events</a></li>
+											<li><a href="#">Forums</a></li>
+										</ul>
+
+									</div>
+								</div>
+								<div class="col-md-3 col-6 mt-4 mt-md-0">
+									<div class="widget widget_links">
+
+										<h4 class="ls0 ls0">Get to Know us</h4>
+
+										<ul>
+											<li><a href="#">Corporate</a></li>
+											<li><a href="#">Agency</a></li>
+											<li><a href="#">eCommerce</a></li>
+											<li><a href="#">Personal</a></li>
+											<li><a href="#">OnePage</a></li>
+										</ul>
+
+									</div>
 								</div>
 							</div>
-
-						</div>
-
-					</div>
-
-					<div class="col_one_third col_last">
-
-						<div class="widget subscribe-widget clearfix">
-							<h5><strong>Suscríbete</strong> a nuestra lista de correos para conocer más sobre el proyecto HealthCloud:</h5>
-							<div class="widget-subscribe-form-result"></div>
-							<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="nobottommargin">
-								<div class="input-group divcenter">
-									<div class="input-group-prepend">
-										<div class="input-group-text"><i class="icon-email2"></i></div>
-									</div>
-									<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Email">
-									<div class="input-group-append">
-										<button class="btn btn-success" type="submit">Suscribir</button>
-									</div>
+							<div class="line line-sm"></div>
+							<div class="row align-items-center">
+								<div class="col-md-8">
+									Conveniently pontificate interdependent mindshare via standards compliant applications. Rapidiously empower effective metrics.
 								</div>
-							</form>
+
+								<div class="col-md-4 mt-3 mt-md-0">
+									<a href="#" class="social-icon si-small si-colored si-facebook" title="Facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-colored si-instagram" title="Instagram">
+										<i class="icon-instagram"></i>
+										<i class="icon-instagram"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-colored si-twitter" title="Twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-colored si-appstore" title="Apple">
+										<i class="icon-apple"></i>
+										<i class="icon-apple"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-colored si-android" title="Android">
+										<i class="icon-android"></i>
+										<i class="icon-android"></i>
+									</a>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 mt-4 mt-md-0">
+							<div class="widget">
+
+								<h4 class="ls0 ls0">From the Blog</h4>
+
+								<article class="entry">
+									<div class="entry-image mb-3">
+										<a href="demos/news/news-single.html"><img src="demos/landing/images/blog-img.jpg" alt="Image 3"></a>
+									</div>
+									<div class="entry-title title-xs">
+										<h3 class="mb-2"><a href="demos/news/news-single.html">A Surprising Tool to Help you Lifestyle</a></h3>
+									</div>
+									<div class="entry-desc">
+										<p class="text-black-50">Quickly maintain covalent supply chains for multidisciplinary scenarios. Competently visualize.</p>
+									</div>
+								</article>
+							</div>
 						</div>
 
 					</div>
 
-				</div><!-- .footer-widgets-wrap end -->
-
+				</div>
 			</div>
 
-			<!-- Copyrights
-			============================================= -->
-			<div id="copyrights">
+			<div id="copyrights" class="bg-color dark py-5">
+				<div class="container">
 
-				<div class="container clearfix">
+					<div class="row col-mb-30">
+						<div class="col-md-6 text-center text-md-left">
+							Copyrights &copy; 2021 All Rights Reserved by Canvas Inc.<br>
+							<div class="copyright-links"><a href="#" class="text-white-50">Terms of Use</a> / <a href="#" class="text-white-50">Privacy Policy</a></div>
+						</div>
 
-					<div class="col_half">
-						Algunos derechos reservados. <i class="fab fa-creative-commons" aria-hidden="true"></i> <i class="fab fa-creative-commons-by" aria-hidden="true"></i> <i class="fab fa-creative-commons-sa" aria-hidden="true"></i> Contenido bajo licencia <a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> 2020. 
-					</div>
-
-					<div class="col_half col_last tright">
-						<div class="fright clearfix">
-							<a href="https://fb.me/HealthCloudDev/" target="_blank" class="social-icon si-small si-borderless nobottommargin si-facebook">
-								<i class="icon-facebook"></i>
-								<i class="icon-facebook"></i>
-							</a>
-
-							<a href="https://twitter.com/HealthCloudDev" target="_blank" class="social-icon si-small si-borderless nobottommargin si-twitter">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
-
-							<a href="https://instagram.com/HealthCloudDev" target="_blank" class="social-icon si-small si-borderless nobottommargin si-instagram">
-								<i class="icon-instagram"></i>
-								<i class="icon-instagram"></i>
-							</a>
-
-							<a href="https://linkedin.com/company/healthclouddev" target="_blank" class="social-icon si-small si-borderless nobottommargin si-linkedin">
-								<i class="icon-linkedin"></i>
-								<i class="icon-linkedin"></i>
-							</a>
-
-							<a href="https://wa.me/50764053342" target="_blank" class="social-icon si-small si-borderless nobottommargin si-whatsapp">
-								<i class="icon-whatsapp"></i>
-								<i class="icon-whatsapp"></i>
-							</a>
+						<div class="col-md-6 text-center text-md-right">
+							<a href="#" class="btn color bg-white rounded px-3 py-2 nott ls0 shadow-sm"><i class="icon-apple1 mr-2"></i>App Store</a>
+							<a href="#" class="btn color bg-white rounded px-3 py-2 nott ls0 shadow-sm ml-2"><i class="icon-google-play mr-2"></i>Play Store</a>
 						</div>
 					</div>
 
 				</div>
-
-			</div><!-- #copyrights end -->
+			</div>
 
 		</footer><!-- #footer end -->
 
@@ -399,20 +744,19 @@
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
 
-<!-- External JavaScripts
-============================================= -->
-<script src="js/jquery.js"></script>
-<script src="js/plugins.js"></script>
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
 
-<!-- Footer Scripts
-============================================= -->
-<script src="js/functions.js"></script>
 
-<script>
-	$(function() {
-		$( "#side-navigation" ).tabs({ show: { effect: "fade", duration: 400 } });
-	});
-</script>
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+
+	</script>
 
 </body>
 </html>
