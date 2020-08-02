@@ -87,7 +87,8 @@
 								<div>
 									<!-- <a href="#" class="btn mt-2 text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm"><i class="icon-user-plus mr-2"></i>Regístrate</a> -->
 									<!-- <a href="#" class="ml-0 ml-lg-2 mt-2 btn text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm"><i class="icon-user mr-2"></i>Inicia sesión</a> -->
-									<a href="#" class="btn mt-2 text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm"><i class="icon-cogs mr-2"></i>Participar en la versión beta</a>
+									<a href="#" class="btn mt-2 text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm" data-toggle="modal" data-target="#betaModal"><i class="icon-cogs mr-2"></i>Participar en la versión beta</a>
+
 								</div>
 								<!-- <p class="text-white-50 text-uppercase mt-2 ls1 font-weight-medium"><small>Regístrate y obten una cuenta personal gratis</small></p> -->
 								<p class="text-white-50 text-uppercase mt-2 ls1 font-weight-medium"><small>Actualmente nuestra plataforma se encuentra en desarrollo</small></p>
@@ -123,6 +124,28 @@
 		============================================= -->
 		<section id="content">
 			<div class="content-wrap pb-0">
+
+				<!-- Modal -->
+				<div class="modal fade" id="betaModal" tabindex="-1" role="dialog" aria-labelledby="betaModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-body">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title" id="betaModalLabel">Programa beta</h4>
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								</div>
+								<div class="modal-body">
+									<p class="mb-0">Al participar en este programa, </p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+									<button type="button" class="btn btn-primary">Solicitar participación</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- cierra modal -->
 
 				<div class="container">
 					<div class="mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
