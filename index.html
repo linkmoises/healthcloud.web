@@ -57,11 +57,11 @@
 
 							<ul class="menu-container one-page-menu">
 								<li class="menu-item current"><a class="menu-link" href="#" data-href="#header"><div>Inicio</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#" data-href="#"><div>Blog</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#" data-href="#"><div>Planes</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#" data-href="#"><div>Soporte</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#" data-href="#"><div>Nosotros</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#" data-href="#"><div>Contacto</div></a></li>
+								<!-- <li class="menu-item"><a class="menu-link" href="#" data-href="#"><div>Blog</div></a></li> -->
+								<!-- <li class="menu-item"><a class="menu-link" href="#" data-href="#"><div>Planes</div></a></li> -->
+								<!-- <li class="menu-item"><a class="menu-link" href="#" data-href="#"><div>Soporte</div></a></li> -->
+								<!-- <li class="menu-item"><a class="menu-link" href="#" data-href="#"><div>Nosotros</div></a></li> -->
+								<!-- <li class="menu-item"><a class="menu-link" href="#" data-href="#"><div>Contacto</div></a></li> -->
 							</ul>
 
 						</nav><!-- #primary-menu end -->
@@ -82,7 +82,7 @@
 						<div class="row align-items-lg-center no-gutters">
 
 							<div class="col-lg-6 col-md-6">
-								<h2 class="display-4 font-weight-bold text-white text-rotater" data-separator="," data-rotate="fadeIn" data-speed="3500">Gestión<br>de <span class="t-rotate text-white">consultorios,clínicas,hospitales,farmacias,laboratorios</span><br>basado en la nube.</h2>
+								<h2 class="display-4 font-weight-bold text-white text-rotater" data-separator="," data-rotate="fadeIn" data-speed="3500">Gestión<br>de <span class="t-rotate text-white">consultorios,clínicas,hospitales,farmacias,laboratorios</span><br>basada en la nube.</h2>
 								<p class="lead mb-4 font-weight-normal">Diseñado y desarrollado por profesionales de la salud para profesionales de la salud.</p>
 								<div>
 									<!-- <a href="#" class="btn mt-2 text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm"><i class="icon-user-plus mr-2"></i>Regístrate</a> -->
@@ -127,7 +127,7 @@
 
 				<!-- Modal -->
 				<div class="modal fade" id="betaModal" tabindex="-1" role="dialog" aria-labelledby="betaModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
+					<div class="modal-dialog modal-lg">
 						<div class="modal-body">
 							<div class="modal-content">
 								<div class="modal-header">
@@ -135,11 +135,42 @@
 									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 								</div>
 								<div class="modal-body">
-									<p class="mb-0">Al participar en este programa, </p>
+									<p class="mb-0">Para participar en el programa beta, requerimos que seas profesional de la salud idóneo de acuerdo a las leyes de la República de Panamá. HealthCloud es un sistema de información de salud desarrollado como una plataforma de software como servicio (SaaS) y por lo tanto almacena datos clínicos de pacientes. Al utilizar nuestra plataforma estas aceptando de manera explícita los acuerdos de <a href="#">confidencialidad</a>, <a href="#">términos de uso</a>, <a href="#">condiciones de uso</a> y <a href="#">políticas de privacidad</a>.</p>
+
+									<form id="beta-form" class="mb-0">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="beta-nombre">Nombres</label>
+												<input type="text" class="form-control" id="beta-nombre" placeholder="Nombres">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="beta-apellido">Apellidos</label>
+												<input type="text" class="form-control" id="beta-apellido" placeholder="Apellidos">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="beta-email">Correo electrónico</label>
+												<input type="email" class="form-control" id="beta-email" placeholder="Correo electrónico">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="beta-rama">Rama de la salud</label>
+												<select id="beta-rama" class="form-control">
+													<option selected>Escoja su rama primaria...</option>
+													<option>Medicina</option>
+													<option>Enfermería</option>
+													<option>Odontología</option>
+													<option>Tecnología médica</option>
+													<option>Farmacia</option>
+												</select>
+											</div>
+										</div>
+									</form>
+
+									<p class="mb-0">Nos estaremos comunicando al correo electrónico que indiques en el formulario dentro de las próximas 24 horas para validar tus datos y crear tu usuario y contraseñas. Al terminar la fase beta, como recompensa se te otorgará una cuenta <em>Pro</em> por 6 meses.</p>
+
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-									<button type="button" class="btn btn-primary">Solicitar participación</button>
+									<button type="submit" form="beta-form" class="btn btn-primary">Solicitar participación</button>
 								</div>
 							</div>
 						</div>
