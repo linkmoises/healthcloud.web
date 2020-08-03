@@ -47,7 +47,7 @@ $fromemail = array(
 ---------------------------------------------------*/
 
 // Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = '6Legm7kZAAAAAI7byRFdcnzB3te0Frwepxzeyies'; // Your reCaptcha Secret
+//$recaptcha_secret = '6Ld-nrkZAAAAAM2G9_ABs0E97yihuPpUXTaZOfEQ'; // Your reCaptcha Secret
 
 
 /*-------------------------------------------------
@@ -57,15 +57,6 @@ $recaptcha_secret = '6Legm7kZAAAAAI7byRFdcnzB3te0Frwepxzeyies'; // Your reCaptch
 $mail = new PHPMailer();
 
 /* Add your SMTP Codes after this Line */
-
-$mail->IsSMTP();
-$mail->Host = "smtp.cloudemail.io";
-$mail->SMTPDebug = 0;
-$mail->SMTPAuth = true;
-$mail->Port = 465;
-$mail->SMTPSecure = 'ssl';
-$mail->Username = "administracion@healthcloud.dev";
-$mail->Password = "old8Dref!";
 
 // End of SMTP
 
