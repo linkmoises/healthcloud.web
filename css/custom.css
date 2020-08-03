@@ -1,0 +1,14 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+#copyrights {
+  padding: 25px 0 0;
+}
+
+.si-whatsapp:hover, .si-colored.si-whatsapp {
+  background-color: #25d366 !important;
+}
