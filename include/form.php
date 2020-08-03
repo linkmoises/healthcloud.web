@@ -27,8 +27,8 @@ require 'phpmailer/src/SMTP.php';
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'your-email@website.com', // Your Email Address
-				'name' => 'Your Name' // Your Name
+				'email' => 'administracion@healthcloud.dev', // Your Email Address
+				'name' => 'HealthCloud' // Your Name
 			);
 
 
@@ -37,8 +37,8 @@ $toemails[] = array(
 ---------------------------------------------------*/
 
 $fromemail = array(
-				'email' => 'no-reply@website.com', // Company's Email Address (preferably currently used Domain Name)
-				'name' => 'Company Name' // Company Name
+				'email' => 'administracion@healthcloud.dev', // Company's Email Address (preferably currently used Domain Name)
+				'name' => 'HealthCloud' // Company Name
 			);
 
 
@@ -47,7 +47,7 @@ $fromemail = array(
 ---------------------------------------------------*/
 
 // Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = ''; // Your reCaptcha Secret
+$recaptcha_secret = '6Legm7kZAAAAAI7byRFdcnzB3te0Frwepxzeyies'; // Your reCaptcha Secret
 
 
 /*-------------------------------------------------
@@ -58,6 +58,14 @@ $mail = new PHPMailer();
 
 /* Add your SMTP Codes after this Line */
 
+$mail->IsSMTP();
+$mail->Host = "smtp.cloudemail.io";
+$mail->SMTPDebug = 0;
+$mail->SMTPAuth = true;
+$mail->Port = 465;
+$mail->SMTPSecure = 'ssl';
+$mail->Username = "administracion@healthcloud.dev";
+$mail->Password = "old8Dref!";
 
 // End of SMTP
 
