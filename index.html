@@ -140,7 +140,8 @@
 			<div class="content-wrap pb-0">
 
 				<!-- Modal -->
-				<form id="beta-form" class="mb-0" action="include/form.php" method="post" enctype="multipart/form-data">
+				<div class="form-widget">
+				<form id="beta-form" class="mb-0" action="include/form.php" method="post">
 				<div class="modal fade" id="betaModal" tabindex="-1" role="dialog" aria-labelledby="betaModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-body">
@@ -154,20 +155,20 @@
 
 									<div class="form-row">
 										<div class="form-group col-md-6">
-											<label for="beta-nombre">Nombres</label>
-											<input type="text" class="form-control" id="beta-nombre" placeholder="Nombres">
+											<label for="beta-form-nombre">Nombres</label>
+											<input type="text" class="form-control" id="beta-form-nombre" placeholder="Nombres">
 										</div>
 										<div class="form-group col-md-6">
-											<label for="beta-apellido">Apellidos</label>
-											<input type="text" class="form-control" id="beta-apellido" placeholder="Apellidos">
+											<label for="beta-form-apellido">Apellidos</label>
+											<input type="text" class="form-control" id="beta-form-apellido" placeholder="Apellidos">
 										</div>
 										<div class="form-group col-md-6">
-											<label for="beta-email">Correo electrónico</label>
-											<input type="email" class="form-control" id="beta-email" placeholder="Correo electrónico">
+											<label for="beta-form-email">Correo electrónico</label>
+											<input type="email" class="form-control" id="beta-form-email" placeholder="Correo electrónico">
 										</div>
 										<div class="form-group col-md-6">
-											<label for="beta-rama">Rama de la salud</label>
-											<select id="beta-rama" class="form-control">
+											<label for="beta-form-rama">Rama de la salud</label>
+											<select id="beta-form-rama" class="form-control">
 												<option selected>Escoja su rama primaria...</option>
 												<option>Medicina</option>
 												<option>Enfermería</option>
@@ -176,18 +177,22 @@
 												<option>Farmacia</option>
 											</select>
 										</div>
+										<div class="form-result"></div>
+										<div class="form-process"></div>
+										<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+										<div class="g-recaptcha" data-sitekey="6Legm7kZAAAAAO9XrewjDBETJyGQalJSt5p--RdA"></div>
 										<div class="col-12 d-none">
 											<input type="text" id="feedback-form-botcheck" name="feedback-form-botcheck" value="" />
 										</div>
 									</div>
 
-									<p class="mb-0">Nos estaremos comunicando al correo electrónico que indiques en el formulario dentro de las próximas 24 horas para validar tus datos y crear tu usuario y contraseñas.</p>
+									<p class="mb-0">Nos estaremos comunicando al correo electrónico que indiques en el formulario dentro de las próximas 24 horas para validar tus datos y crear tus credenciales de acceso.</p>
 
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 									<button type="submit" form="beta-form" class="btn btn-primary">Solicitar participación</button>
-									<input type="hidden" name="prefix" value="[BETA] - ">
+									<input type="hidden" name="prefix" value="beta-form-">
 									<input type="hidden" name="subject" value="Nuevo interesado">
 								</div>
 							</div>
@@ -195,6 +200,7 @@
 					</div>
 				</div>
 				</form>
+				</div>
 				<!-- cierra modal -->
 
 				<div class="container">
